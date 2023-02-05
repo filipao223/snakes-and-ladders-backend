@@ -1,0 +1,33 @@
+debug: false
+
+name: test-config
+enabled: true
+app:
+  frontend:
+    enabled: false
+
+  # Snake configuration, key denotes snake start, value is snake end
+  boardSnakePositions:
+    16: 6
+    46: 25
+    49: 11
+    62: 19
+    64: 60
+    74: 53
+    89: 68
+    92: 88
+    95: 75
+    99: 80
+
+  # Ladder configuration, key denotes ladder start, value is ladder end
+  boardLadderPositions:
+    2: 38
+    7: 14
+    8: 31
+    15: 26
+    21: 42
+    36: 44
+    51: 67
+    71: 91
+    78: 98
+    87: 94
