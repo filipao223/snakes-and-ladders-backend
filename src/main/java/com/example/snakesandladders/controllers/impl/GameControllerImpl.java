@@ -5,6 +5,7 @@ import com.example.snakesandladders.models.player.Player;
 import com.example.snakesandladders.services.GameService;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping(path = "/game", produces = MediaType.APPLICATION_JSON_VALUE)
 public class GameControllerImpl implements GameController {

@@ -35,7 +35,7 @@ public class GameServiceImpl implements GameService {
     public Game newGame(List<Player> players) {
         Map<String, Integer> startingPositions = players.stream()
                 .map(Player::getPlayerName)
-                .collect(Collectors.toMap(playerName -> playerName, playerName -> 0));
+                .collect(Collectors.toMap(playerName -> playerName, playerName -> 1));
 
         gameInstance = new Game(players, createBoard(), startingPositions);
 
